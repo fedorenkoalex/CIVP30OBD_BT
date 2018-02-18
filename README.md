@@ -129,7 +129,7 @@ buffer_02 [12]
 float o2 = (float) (buffer_02 [12] / 51.3f)
 
 Second O2 Sensor voltage
-напряжение 
+
 buffer_02 [14]
 
 float batteryVoltage = (float) buffer_02 [14]/ 10.45f
@@ -162,7 +162,7 @@ buffer_03[9]
 int ltCor = (int) ((buffer_03[9] / 128.0f - 1.0f) * 100.0f)
 
 Injection time 2 bytes
-buffer_03[11] и buffer_03[12]
+buffer_03[11] and buffer_03[12]
 
 double injectionTime = ((buffer_03[11] * 256.0) + buffer_03[12]) / 250.0;
 
