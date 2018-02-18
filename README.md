@@ -192,6 +192,7 @@ buffer_03[19]
 float valve = (float) (valveParam / 2.55f)
 
 **Read errors**
+
 Here we have two commands:
 {0x20,0x05,0x40,0x10,0x8B}
 and 
