@@ -67,7 +67,7 @@ Here are the some formulas:
 **First data response**
 
 RPM
-buffer_01[7]  è buffer_01[8]
+buffer_01[7]  and buffer_01[8]
 
 rpm = 1875000/( buffer_01[7] *256 + buffer_01[8]+1);
 or
