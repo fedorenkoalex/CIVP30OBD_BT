@@ -5,10 +5,10 @@
 Adriuno sketch file and Android helper classes for reading sensors data and error codes Honda OBD1 ECU (tested on UDSM P30 installed on Civic '92). 
 
 ## Navigation
-1. [Arduino sketch file](https://www.google.com.ua)
-2. [Android helper classes](https://www.google.com.ua)
-3. [Android demo application](https://www.google.com.ua)
-1. [Resources](https://www.google.com.ua)
+1. [Arduino sketch file](https://github.com/fedorenkoalex/CIVP30OBD_BT/tree/master/Arduino)
+2. [Android helper classes](https://github.com/fedorenkoalex/CIVP30OBD_BT/tree/master/Android%20Helpers)
+3. [Android demo application](https://github.com/fedorenkoalex/CIVP30OBD_BT/tree/master/Demo%20App)
+1. [Resources](https://github.com/fedorenkoalex/CIVP30OBD_BT/tree/master/Images)
 
 ## Installation
 
@@ -20,7 +20,7 @@ At first you need:
 
 Ñonnection according to scheme:
 
-![Connection](CIVP30OBD_BT/Images/arduino_scheme.jpg "Connection")
+![Connection](https://github.com/fedorenkoalex/CIVP30OBD_BT/blob/master/Images/arduino_scheme.jpg?raw=true "Connection")
 
 - TX and RX from Arduino connect together and connect to K-Line pin on ECU
 - Power supply connect to VIN and GND pins of Arduino (30 and 29) using L7809CV3 stabilizer
@@ -60,7 +60,7 @@ After each command, we get a response of 24 bytes array, where:
 Details for each response can be seen on the photo:
 
 
-![Data ](CIVP30OBD_BT/Images/data.png "Data ")
+![Data ](https://github.com/fedorenkoalex/CIVP30OBD_BT/blob/master/Images/data.png?raw=true "Data")
 
 Here are the some formulas: 
 
@@ -90,7 +90,7 @@ buffer_01[22] - flags word 8;
 
 For details look at picture:
 
-![Flags](CIVP30OBD_BT/Images/flags.png "Flags")
+![Flags](https://github.com/fedorenkoalex/CIVP30OBD_BT/blob/master/Images/flags.png?raw=true "Flags")
 
 For example take 4th flag word and 6th bit of it. (from right to left). At picture we see that this is Check Engine light indicator. If 6th bit in this word be 1 it means that Check Engine light is on.
 In code this look like: 
@@ -206,7 +206,7 @@ For example we take the first byte from first response. It contains information 
 
 For details look at picture:
 
-![Errors data](CIVP30OBD_BT/Images/errors.png "Errors data")
+![Errors data](https://github.com/fedorenkoalex/CIVP30OBD_BT/blob/master/Images/errors.png?raw=true "Errors data")
 
 
 
